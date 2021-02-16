@@ -2,7 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Amplify, {API} from 'aws-amplify'
+import config from './aws-exports'
 import { useEffect } from 'react'
+
+Amplify.configure(config)
 
 function App() {
   const result = 'hello';

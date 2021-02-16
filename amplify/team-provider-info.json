@@ -21,7 +21,7 @@
       "function": {
         "tutorial1": {
           "deploymentBucketName": "amplify-amplifytutorial-dev-100304-deployment",
-          "s3Key": "amplify-builds/tutorial1-74637750462b61627936-build.zip"
+          "s3Key": "amplify-builds/tutorial1-5a41362b694846305a6a-build.zip"
         }
       }
     }
