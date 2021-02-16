@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/user/{id}",
+            "lambdaFunction": "tutorial1",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/user/*"
+        }
+    ],
+    "resourceName": "api",
+    "apiName": "api",
+    "functionArns": [
+        {
+            "lambdaFunction": "tutorial1"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifytutorial-dev-100304-authRole",
+        "unAuthRoleName": "amplify-amplifytutorial-dev-100304-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "tutorial1",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
