@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "amplify:tutorial1": "cd amplify/backend/function/tutorial1/src && tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

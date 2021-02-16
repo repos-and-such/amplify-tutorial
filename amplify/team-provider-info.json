@@ -21,7 +21,11 @@
       "function": {
         "tutorial1": {
           "deploymentBucketName": "amplify-amplifytutorial-dev-100304-deployment",
-          "s3Key": "amplify-builds/tutorial1-5a41362b694846305a6a-build.zip"
+          "s3Key": "amplify-builds/tutorial1-4a616977636771567175-build.zip"
+        },
+        "graphFunc": {
+          "deploymentBucketName": "amplify-amplifytutorial-dev-100304-deployment",
+          "s3Key": "amplify-builds/graphFunc-5233713944454a794258-build.zip"
         }
       }
     }

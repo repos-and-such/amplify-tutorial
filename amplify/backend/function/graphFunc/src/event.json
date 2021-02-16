@@ -1,0 +1,5 @@
+{
+  "typeName": "Query",
+  "fieldName": "getTodo",
+  "arguments": {"id": 1}
+}

@@ -1,3 +1,5 @@
+
+
 exports.handler = async (event) => {
     // TODO implement
     const response = {
@@ -5,7 +7,7 @@ exports.handler = async (event) => {
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Headers": "*"
-        },
+        }, 
         body: JSON.stringify(event),
     };
     return response;

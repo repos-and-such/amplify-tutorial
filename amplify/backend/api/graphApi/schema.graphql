@@ -1,0 +1,11 @@
+type Query {
+  todos: [Todo] @function(name: "graphFunc-{env}")
+  getTodo: Todo @function(name: "graphFunc-{env}")
+}
+
+
+type Todo {
+  id: ID!
+  name: String!
+  description: String
+}
