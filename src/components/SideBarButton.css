@@ -1,0 +1,7 @@
+.SideBarButton {
+  color: white;
+  background-image: linear-gradient(160deg, rgb(99, 0, 165), rgb(2, 117, 121));
+  border-radius: 0px;
+  margin-left: 10px;
+  border: none;
+}

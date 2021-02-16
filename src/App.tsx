@@ -1,41 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Amplify, {API} from 'aws-amplify'
-import config from './aws-exports'
-import { useEffect } from 'react'
+import { observer } from 'mobx-react-lite' // 6.x or mobx-react-lite@1.4.0
+import AppBody from './components/AppBody'
+import AppHeader from './components/AppHeader'
+import { useRootStore } from './components/RootStateContext';
 
-Amplify.configure(config)
-
-function App() {
-  const result = 'hello';
-  useEffect(() => {
-    getResp();
-  }, [])
-
-  const getResp = async () => {
-    const result = await API.get('userApi', '/user/1', []);
-    console.log(result)
-  }
-
+const App = observer(() => {
+  const { rootStore: { userStore } } = useRootStore();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Eeeeeeedit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    <AppHeader />
+
+    {userStore.isSignedInWithGoogle
+    ? 
+    <AppBody />
+    :
+    <p style={{padding: 20}}>Please log in to access all the awesome features</p>
+    }
+    </>
+  )
+});
+
 
 export default App;

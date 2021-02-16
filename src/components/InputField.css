@@ -1,0 +1,32 @@
+input {
+  margin: 3px 24px 12px 0px;
+  padding: 3px 8px;
+  width: 28vw;
+  height: 28px;
+  border: 1px solid rgb(192, 192, 192);
+  font-size: 19px;
+  color: rgb(73, 73, 73);
+  overflow-y: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+input:focus {
+  outline: none !important;
+  background-color: white;
+  border: 1px solid rgb(226, 193, 174);
+  box-shadow: 0 0 4px 1px rgb(226, 193, 174);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(156, 156, 156);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(156, 156, 156);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(156, 156, 156);
+}

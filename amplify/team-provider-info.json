@@ -25,7 +25,7 @@
         },
         "graphFunc": {
           "deploymentBucketName": "amplify-amplifytutorial-dev-100304-deployment",
-          "s3Key": "amplify-builds/graphFunc-5233713944454a794258-build.zip"
+          "s3Key": "amplify-builds/graphFunc-4b4f314a6c7a68633378-build.zip"
         }
       }
     }

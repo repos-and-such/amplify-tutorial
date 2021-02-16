@@ -1,0 +1,18 @@
+.NewChallengePreview {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 4px;
+  font-size: 14px;
+  background-color: rgb(255, 240, 226);
+  color: rgb(94, 79, 79);
+  box-shadow: 0 0 3px gray;
+  border-radius: 3px;
+}
+
+.PreviewItem {
+  margin: 5px 4px;
+  padding: 0px;
+  word-break: break-all;
+}

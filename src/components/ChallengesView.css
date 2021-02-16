@@ -1,0 +1,8 @@
+.ChallengesView {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  width: 100%;
+  font-size: 18px;
+  color: rgb(70, 70, 70);
+}

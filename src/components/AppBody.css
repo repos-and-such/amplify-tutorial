@@ -1,0 +1,6 @@
+.AppBody {
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 6px 0 0;
+  margin: 0;
+}

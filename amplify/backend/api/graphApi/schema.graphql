@@ -1,6 +1,6 @@
 type Query {
-  todos: [Todo] @function(name: "graphFunc-{env}")
-  getTodo: Todo @function(name: "graphFunc-{env}")
+  todos: [Todo] @function(name: "graphFunc-${env}")
+  getTodo(id: ID!): Todo @function(name: "graphFunc-${env}")
 }
 
 

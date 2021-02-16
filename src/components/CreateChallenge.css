@@ -1,0 +1,9 @@
+.CreateChallenge {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 12px;
+  padding: 12px;
+  font-size: 18px;
+  color: #5e4f4f;
+}
