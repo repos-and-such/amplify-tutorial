@@ -1,8 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Amplify, {API} from 'aws-amplify'
+import { useEffect } from 'react'
 
 function App() {
+  const result = 'hello';
+  useEffect(() => {
+    getResp();
+  }, [])
+
+  const getResp = async () => {
+    const result = await API.get('userApi', '/user/1', []);
+    console.log(result)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
